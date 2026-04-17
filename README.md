@@ -1,51 +1,76 @@
-Capstone: Evaluating Algorithmic Reasoning in Large Language Models (LLMs)
- A Dynamic and Hybrid Approach to Graph Traversal
- 
-GitHub Repository:
- https://github.com/lakshmisatti/Capstone-Evaluating-Algorithmic-Reasoning-in-LLMs
- 
-Overview:
- This capstone investigates whether Large Language Models approximate classical search
- algorithms such as BFS or DFS during graph traversal tasks. The project introduces
- a comprehensive evaluation framework integrating scratchpad reasoning, dynamic RSA,
- attention analysis, and a hybrid symbolic–neural planner.
- 
-Project Goals:
- 1. Determine whether LLMs approximate systematic search algorithms internally.
- 2. Evaluate LLM reasoning in reward-based graph navigation.
- 3. Assess hybrid symbolic–neural reasoning improvements.
+# 🧠 LLM Reasoning Analysis: Do LLMs Mimic Graph Algorithms?
 
-Repository Structure:- 
- 1. evaluation_runner.py
- 2. graphs.py
- 3. planner.py
- 4. prompts.py
- 5. hybrid_runner.py
- 6. models_transformers.py
- 7. attention_analysis.py
- 8. rsa_analysis.py
- 9. utils.py
- 10. visualize.py
- 11. scratchpad_runner.py
+## 🚀 Overview
 
-Methods:
- 1. Scratchpad Reasoning
- 2. Dynamic Representational Analysis (RSA + Attention)
- 3. Hybrid Symbolic Planner
-    
-Graph Environments:- 
- 1. Line graph (n7line)
- 2. Tree graph (n7tree)
- 3. Clustered graph (n15clustered)
-    
-How to Run:
- 1. pip install -r requirements.txt
- 2. python run_capstone_transformers.py
- 3. python evaluation_runner.py
+This project analyzes whether Large Language Models (LLMs) implicitly approximate classical graph traversal algorithms like **BFS and DFS**.
 
-Generated Outputs:- 
- 1. CSV metrics
- 2. JSON logs
- 3. RSM heatmaps
- 4. Attention maps
- 5. Graph visualizations
+It combines interpretability techniques and hybrid planning to understand how LLMs reason in structured environments.
+
+## 🎯 Why This Matters
+
+LLMs often appear to reason, but their internal logic is unclear.
+This project helps answer:
+
+* Do LLMs follow structured reasoning like algorithms?
+* Where do they fail?
+* Can hybrid systems improve performance?
+
+## 🧠 Approach
+
+* Scratchpad-based reasoning evaluation
+* Representational Similarity Analysis (RSA)
+* Attention pattern analysis
+* Hybrid symbolic + LLM planner (BFS/A*)
+
+## ⚙️ Tech Stack
+
+* Python
+* PyTorch
+* Hugging Face Transformers
+* NumPy / SciPy
+
+## 📊 Results
+
+* LLMs show **partial similarity to BFS-like reasoning**
+* Performance decreases on complex graphs
+* Hybrid planner improves consistency and accuracy
+
+## 🏗️ Architecture
+
+Graph → LLM Reasoning → Analysis (RSA + Attention) → Hybrid Planner → Evaluation
+
+## 📁 Project Structure
+
+* `evaluation_runner.py` → Runs experiments
+* `graphs.py` → Graph environments
+* `planner.py` → Hybrid planner
+* `attention_analysis.py` → Attention analysis
+* `rsa_analysis.py` → Representational similarity
+* `scratchpad_runner.py` → Step-by-step reasoning
+
+## ▶️ How to Run
+
+```bash
+pip install -r requirements.txt
+python run_capstone_transformers.py
+python evaluation_runner.py
+```
+
+## 📈 Outputs
+
+* CSV metrics
+* JSON logs
+* Attention maps
+* RSA heatmaps
+* Graph visualizations
+
+## 🔮 Future Work
+
+* Extend to larger LLMs
+* Improve reasoning evaluation metrics
+* Apply to real-world planning tasks
+
+## 👤 Author
+
+Lakshmi Lahari Satti
+AI/ML Engineer | LLM Systems
